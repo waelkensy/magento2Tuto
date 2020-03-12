@@ -1,0 +1,6 @@
+<?php
+/** @var \Tuto\CreateNewOrderAdminTab\Block\Adminhtml\Order\View\Tab\CustomAttribute $block */
+$order = $block->getOrder();
+?>
+<h1><?= $block->escapeHtml(__('Custom attribute')); ?></h1>
+<p><?php echo $block->escapeHtml($order->getData('custom_attribute')); ?></p>
